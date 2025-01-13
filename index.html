@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Влияние физической активности на здоровье человека</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Влияние физической активности на здоровье человека</h1>
+    </header>
+
+    <nav>
+        <button onclick="showPage('home')">Главная</button>
+        <button onclick="showPage('test')">Тест</button>
+        <button onclick="showPage('exercises')">Упражнения</button>
+    </nav>
+
+    <div class="content home">
+        <h2>Психологические преимущества</h2>
+        <ul>
+            <li>Улучшает настроение</li>
+            <li>Улучшает качество сна</li>
+            <li>Помогает справляться со стрессом и тревогой</li>
+            <li>Повышает концентрацию внимания</li>
+        </ul>
+
+        <h2>Преимущества физической активности</h2>
+        <ul>
+            <li>Укрепляет сердечно-сосудистую систему</li>
+            <li>Делает сердце более выносливым</li>
+            <li>Повышает выносливость и силу мышц</li>
+            <li>Улучшает работу мозга и снижает уровень стресса</li>
+        </ul>
+
+        <h2>Влияние на сердечно-сосудистую систему</h2>
+        <ul>
+            <li>Снижает риск сердечно-сосудистых заболеваний</li>
+            <li>Снижает уровень «плохого» холестерина</li>
+            <li>Нормализует кровяное давление</li>
+        </ul>
+
+        <h2>Примеры физических упражнений</h2>
+        <ul>
+            <li>ДЛЯ ДЕТЕЙ: подвижные игры, бег, плавание</li>
+            <li>Для подростков: футбол, баскетбол, велосипедные прогулки</li>
+            <li>Для взрослых: йога, силовые упражнения, ходьба или бег трусцой</li>
+        </ul>
+
+        <h2>Рекомендации по улучшению здоровья</h2>
+        <ul>
+            <li>Шаг 1: занимайтесь спортом не менее 30 минут в день</li>
+            <li>Шаг 2: выбирайте активность по душе</li>
+            <li>Шаг 3: соблюдайте баланс между тренировками и отдыхом</li>
+            <li>Шаг 4: следите за питанием и сном</li>
+        </ul>
+    </div>
+
+    <div class="content test">
+        <h2>Тест: Какой вид спорта выбрать?</h2>
+        <p>Выберите ваш предпочтительный уровень активности:</p>
+        <div class="result">
+            <button onclick="showResult('easy')">Начинающий</button>
+            <button onclick="showResult('intermediate')">Любитель</button>
+            <button onclick="showResult('advanced')">Продвинутый</button>
+        </div>
+        <div id="resultText" class="result"></div>
+    </div>
+
+    <div class="content exercises">
+        <h2>Упражнения по уровням подготовки</h2>
+        <div class="level-select">
+            <button onclick="showLevel('novice')">Для новичков</button>
+            <button onclick="showLevel('intermediate')">Для любителей</button>
+            <button onclick="showLevel('advanced')">Для продвинутых</button>
+        </div>
+
+        <div id="novice" class="exercises">
+            <h3>Для новичков</h3>
+            <p>Легкие упражнения для начала:</p>
+            <ul>
+                <li>Прогулки на свежем воздухе</li>
+                <li>Легкие растяжки</li>
+                <li>Йога для начинающих</li>
+            </ul>
+        </div>
+
+        <div id="intermediate" class="exercises">
+            <h3>Для любителей</h3>
+            <p>Упражнения средней сложности:</p>
+            <ul>
+                <li>Бег трусцой</li>
+                <li>Силовые тренировки</li>
+                <li>Велосипедные прогулки</li>
+            </ul>
+        </div>
+
+        <div id="advanced" class="exercises">
+            <h3>Для продвинутых</h3>
+            <p>Интенсивные тренировки для опытных:</p>
+            <ul>
+                <li>Тренировки в спортивном зале</li>
+                <li>Футбол, баскетбол</li>
+                <li>Силовые тренировки с тяжестями</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
